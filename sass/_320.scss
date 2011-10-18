@@ -1,0 +1,162 @@
+///Sentinel garamond stack
+
+
+//---------------------------------------------------
+// Globals
+//---------------------------------------------------
+
+html {
+    overflow-y: scroll;
+}
+
+body {
+    background: url('../images/build/bg_noise.jpg');
+}
+
+.wrap {
+    margin: 0 auto;  
+    width: 640px;
+}
+
+header, footer { 
+    text-align: center;   
+}
+
+header {
+    background: rgba(246,246,246,.8);
+    position: fixed;
+    height: 200px; 
+    width: 100%;
+    z-index: 4;
+}
+
+footer {
+    height: 100px;
+}
+
+.content_wrap {
+    border-bottom: 1px solid #e5e5e5;    
+    overflow: hidden;
+    padding-top: 200px;
+}
+
+//---------------------------------------------------
+// for JS
+//---------------------------------------------------
+
+.hidden {
+    display: none;
+}
+
+//---------------------------------------------------
+// Post Head
+//---------------------------------------------------
+
+.post_head {
+    background: rgba(255,255,255,1) url('../images/build/bg_noise.jpg');
+    border-top: 1px solid #e5e5e5;    
+    cursor: pointer;
+    display: block;
+    height: 100px;
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    
+    @include transition_default;            
+} 
+
+.post_head_active { @include transition_default; }
+
+.post_head_active,
+.post_head:hover {
+    background: #666;   
+}
+
+.post .post_head .title_wrap {
+    display: inline-block;
+    position: relative;
+}
+
+.post_head .title_wrap h3 {
+    color: #bbb;
+    display: inline;
+    font-family: "Sentinel", "superclarendon", sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 100px;
+}
+
+.post_head .title_wrap span {
+    bottom: 0;  
+    position: absolute;
+    width: 500px;
+}
+
+.img_preview_left .post_head .title_wrap span {
+    left: -500px;      
+}
+
+.img_preview_right .post_head .title_wrap span {
+    right: -500px;
+}
+
+.post_head .title_wrap span img {
+    position: absolute;
+    bottom: -100px; 
+    right: 0; 
+    z-index: 1;
+    
+    @include opacity(0);
+    @include transition_default;      
+}
+
+.img_preview_left .post_head .title_wrap img { right: 0; }
+
+.img_preview_right .post_head .title_wrap img { left: 0; }
+
+.img_preview_left .post_head:hover .title_wrap img,
+.img_preview_left .post_head_active .title_wrap img,
+.img_preview_right .post_head:hover .title_wrap img,
+.img_preview_right .post_head_active .title_wrap img {
+    bottom: 0;
+    
+    @include opacity(100);    
+}
+
+//---------------------------------------------------
+// Post Content
+//---------------------------------------------------
+
+.post_content {
+    //this needs a BG to cover img_preview with z-index
+    background: #fff;
+    position: relative;
+    z-index: 2;
+}
+
+//---------------------------------------------------
+// Post Specific Styling
+//---------------------------------------------------
+.informatics .post_head_active,
+.informatics .post_head:hover {
+    background: aqua;   
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
