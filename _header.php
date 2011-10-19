@@ -50,7 +50,6 @@
 <body>
     <header>
         <div class="wrap">
-            <h1>Roven Bashier</h1>
-            <h2>Interactive Designer</h2>
+            <h1>Roven Bashier | Interactive Designer</h1>
         </div>    
     </header> 

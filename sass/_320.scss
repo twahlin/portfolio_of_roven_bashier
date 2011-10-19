@@ -1,11 +1,19 @@
-///Sentinel garamond stack
+//---------------------------------------------------
+// for JS
+//---------------------------------------------------
 
+.hidden {
+    display: none;
+}
 
 //---------------------------------------------------
 // Globals
 //---------------------------------------------------
 
 html {
+    color: #666;
+    font-family: "Helvetica Neue", Arial, sans-serif; 
+    font-size: 12px; 
     overflow-y: scroll;
 }
 
@@ -18,22 +26,6 @@ body {
     width: 640px;
 }
 
-header, footer { 
-    text-align: center;   
-}
-
-header {
-    background: rgba(246,246,246,.8);
-    position: fixed;
-    height: 200px; 
-    width: 100%;
-    z-index: 4;
-}
-
-footer {
-    height: 100px;
-}
-
 .content_wrap {
     border-bottom: 1px solid #e5e5e5;    
     overflow: hidden;
@@ -41,11 +33,55 @@ footer {
 }
 
 //---------------------------------------------------
-// for JS
+// Header
 //---------------------------------------------------
 
-.hidden {
-    display: none;
+header {
+    background: rgba(246,246,246,.8);
+    position: absolute;
+    text-align: center;
+    height: 200px; 
+    width: 100%;
+}
+
+h1 {
+    background: url('../images/build/png_master_sprite.png') 0 0;
+    display: block;
+    height: 0;
+    margin: 80px auto 0 auto;
+    overflow: hidden;
+    padding-top: 41px;
+    width: 126px;
+}
+
+//---------------------------------------------------
+// Footer
+//---------------------------------------------------
+
+footer {
+    background: rgba(246,246,246,.8);    
+    height: 100px;
+    
+    @include garamond-pro-italic;   
+}
+
+footer .info {
+    color: #0bb6ca;    
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 30px;
+    text-align: center;  
+       
+    @include garamond-pro-italic;   
+}
+
+footer .info li a {
+    color: #0bb6ca;
+}
+
+footer .info li a:hover {
+    color: #0891a1;
+    text-decoration: underline;
 }
 
 //---------------------------------------------------
@@ -60,9 +96,7 @@ footer {
     height: 100px;
     position: relative;
     text-align: center;
-    z-index: 2;
-    
-    @include transition_default;            
+    z-index: 2;         
 } 
 
 .post_head_active { @include transition_default; }
@@ -80,10 +114,16 @@ footer {
 .post_head .title_wrap h3 {
     color: #bbb;
     display: inline;
-    font-family: "Sentinel", "superclarendon", sans-serif;
     font-size: 30px;
-    font-weight: 100;
     line-height: 100px;
+    
+    @include garamond-premier-pro-display-light;
+}
+
+.post_head:hover .title_wrap h3,
+.post_head_active .title_wrap h3 {
+    color: #fff;
+    @include text-shadow(rgba(0,0,0, 0.2) -1px -1px 0);     
 }
 
 .post_head .title_wrap span {
@@ -131,16 +171,86 @@ footer {
     //this needs a BG to cover img_preview with z-index
     background: #fff;
     position: relative;
+    padding-bottom: 30px;
     z-index: 2;
+}
+
+.post_content .wrap {
+    position: relative;
+    padding-top: 26px;
+}
+
+.post_content .hide_content {
+    background: url('../images/build/png_master_sprite.png') -128px 0;
+    cursor: pointer;
+    height: 0;
+    overflow: hidden;
+    padding-top: 19px;
+    position: absolute; 
+    right: 0;       
+    top: 30px;
+    width: 19px;
+}
+
+.post_content .hide_content:hover {
+    background-position: -128px -19px;
+}
+
+.post_content p {
+    border-bottom: 1px solid #e5e5e5;
+    line-height: 18px;
+    margin: 0 0 30px 0;
+    padding: 0 80px 30px 0;
+}
+
+.post_content .img_list li {
+    border-top: 1px solid #e5e5e5;    
+    margin: 30px 0 0 0;
+    padding: 30px 0 0 0;
+}
+
+.post_content .img_list li:first-child {
+    border-top: none;    
+    margin: 0;
+    padding: 0;
+}
+
+.post_content .img_list li img {
+    display: block;
+    width: 100%;
+
+    @include box-shadow(rgba(0,0,0, .12) 0 3px 7px); 
 }
 
 //---------------------------------------------------
 // Post Specific Styling
 //---------------------------------------------------
+.v26 .post_head_active,
+.v26 .post_head:hover { background: #595959; }
+
 .informatics .post_head_active,
-.informatics .post_head:hover {
-    background: aqua;   
-}
+.informatics .post_head:hover { background: #ff0000; }
+
+.fight_for_fandom .post_head_active,
+.fight_for_fandom .post_head:hover { background: #ffd200; }
+
+.travel_app .post_head_active,
+.travel_app .post_head:hover { background: #00a2bd; }
+
+.delta_gold .post_head_active,
+.delta_gold .post_head:hover { background: #e31836; }
+
+.cash_tracker .post_head_active,
+.cash_tracker .post_head:hover { background: #0c83cc; }
+
+.clear_channel_radio .post_head_active,
+.clear_channel_radio .post_head:hover { background: #e10019; }
+
+.clear_channel_outdoor .post_head_active,
+.clear_channel_outdoor .post_head:hover { background: #026390; }
+
+.ocelo .post_head_active,
+.ocelo .post_head:hover { background: #ec008c; }
 
 
 

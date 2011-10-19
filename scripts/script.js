@@ -54,6 +54,7 @@ $(document).ready(function() {
     
     
     
+$('.post_content .hide_content').removeClass('hidden');    
 $('.post_content').addClass('hidden');    
     
 $('.post_head').click(function() {

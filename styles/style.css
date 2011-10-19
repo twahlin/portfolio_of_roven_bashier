@@ -1,3 +1,4 @@
+/*@mixin garamond { font-family: "Sentinel", "adobe-garamond-pro", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; font-weight: 400; }*/
 /* line 1, ../sass/_reset.scss */
 html, body {
   height: 100%;
@@ -86,54 +87,90 @@ abbr[title] {
   -webkit-text-size-adjust: none;
 }
 
-/* line 8, ../sass/_320.scss */
+/* line 5, ../sass/_320.scss */
+.hidden {
+  display: none;
+}
+
+/* line 13, ../sass/_320.scss */
 html {
+  color: #666;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 12px;
   overflow-y: scroll;
 }
 
-/* line 12, ../sass/_320.scss */
+/* line 20, ../sass/_320.scss */
 body {
   background: url("../images/build/bg_noise.jpg");
 }
 
-/* line 16, ../sass/_320.scss */
+/* line 24, ../sass/_320.scss */
 .wrap {
   margin: 0 auto;
   width: 640px;
 }
 
-/* line 21, ../sass/_320.scss */
-header, footer {
-  text-align: center;
-}
-
-/* line 25, ../sass/_320.scss */
-header {
-  background: rgba(246, 246, 246, 0.8);
-  position: fixed;
-  height: 200px;
-  width: 100%;
-  z-index: 4;
-}
-
-/* line 33, ../sass/_320.scss */
-footer {
-  height: 100px;
-}
-
-/* line 37, ../sass/_320.scss */
+/* line 29, ../sass/_320.scss */
 .content_wrap {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   padding-top: 200px;
 }
 
-/* line 47, ../sass/_320.scss */
-.hidden {
-  display: none;
+/* line 39, ../sass/_320.scss */
+header {
+  background: rgba(246, 246, 246, 0.8);
+  position: absolute;
+  text-align: center;
+  height: 200px;
+  width: 100%;
 }
 
-/* line 55, ../sass/_320.scss */
+/* line 47, ../sass/_320.scss */
+h1 {
+  background: url("../images/build/png_master_sprite.png") 0 0;
+  display: block;
+  height: 0;
+  margin: 80px auto 0 auto;
+  overflow: hidden;
+  padding-top: 41px;
+  width: 126px;
+}
+
+/* line 61, ../sass/_320.scss */
+footer {
+  background: rgba(246, 246, 246, 0.8);
+  height: 100px;
+  font-family: "adobe-garamond-pro", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 68, ../sass/_320.scss */
+footer .info {
+  color: #0bb6ca;
+  font-size: 16px;
+  line-height: 20px;
+  padding-top: 30px;
+  text-align: center;
+  font-family: "adobe-garamond-pro", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+/* line 78, ../sass/_320.scss */
+footer .info li a {
+  color: #0bb6ca;
+}
+
+/* line 82, ../sass/_320.scss */
+footer .info li a:hover {
+  color: #0891a1;
+  text-decoration: underline;
+}
+
+/* line 91, ../sass/_320.scss */
 .post_head {
   background: white url("../images/build/bg_noise.jpg");
   border-top: 1px solid #e5e5e5;
@@ -143,21 +180,9 @@ footer {
   position: relative;
   text-align: center;
   z-index: 2;
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
 }
 
-/* line 68, ../sass/_320.scss */
+/* line 102, ../sass/_320.scss */
 .post_head_active {
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -173,46 +198,53 @@ footer {
   transition-timing-function: ease-in;
 }
 
-/* line 71, ../sass/_320.scss */
+/* line 105, ../sass/_320.scss */
 .post_head_active,
 .post_head:hover {
   background: #666;
 }
 
-/* line 75, ../sass/_320.scss */
+/* line 109, ../sass/_320.scss */
 .post .post_head .title_wrap {
   display: inline-block;
   position: relative;
 }
 
-/* line 80, ../sass/_320.scss */
+/* line 114, ../sass/_320.scss */
 .post_head .title_wrap h3 {
   color: #bbb;
   display: inline;
-  font-family: "Sentinel", "superclarendon", sans-serif;
   font-size: 30px;
-  font-weight: 100;
   line-height: 100px;
+  font-family: "garamond-premier-pro-display", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif;
+  font-weight: 300;
 }
 
-/* line 89, ../sass/_320.scss */
+/* line 124, ../sass/_320.scss */
+.post_head:hover .title_wrap h3,
+.post_head_active .title_wrap h3 {
+  color: #fff;
+  text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
+}
+
+/* line 129, ../sass/_320.scss */
 .post_head .title_wrap span {
   bottom: 0;
   position: absolute;
   width: 500px;
 }
 
-/* line 95, ../sass/_320.scss */
+/* line 135, ../sass/_320.scss */
 .img_preview_left .post_head .title_wrap span {
   left: -500px;
 }
 
-/* line 99, ../sass/_320.scss */
+/* line 139, ../sass/_320.scss */
 .img_preview_right .post_head .title_wrap span {
   right: -500px;
 }
 
-/* line 103, ../sass/_320.scss */
+/* line 143, ../sass/_320.scss */
 .post_head .title_wrap span img {
   position: absolute;
   bottom: -100px;
@@ -234,17 +266,17 @@ footer {
   transition-timing-function: ease-in;
 }
 
-/* line 113, ../sass/_320.scss */
+/* line 153, ../sass/_320.scss */
 .img_preview_left .post_head .title_wrap img {
   right: 0;
 }
 
-/* line 115, ../sass/_320.scss */
+/* line 155, ../sass/_320.scss */
 .img_preview_right .post_head .title_wrap img {
   left: 0;
 }
 
-/* line 120, ../sass/_320.scss */
+/* line 160, ../sass/_320.scss */
 .img_preview_left .post_head:hover .title_wrap img,
 .img_preview_left .post_head_active .title_wrap img,
 .img_preview_right .post_head:hover .title_wrap img,
@@ -254,15 +286,120 @@ footer {
   opacity: 100;
 }
 
-/* line 130, ../sass/_320.scss */
+/* line 170, ../sass/_320.scss */
 .post_content {
   background: #fff;
   position: relative;
+  padding-bottom: 30px;
   z-index: 2;
 }
 
-/* line 141, ../sass/_320.scss */
+/* line 178, ../sass/_320.scss */
+.post_content .wrap {
+  position: relative;
+  padding-top: 26px;
+}
+
+/* line 183, ../sass/_320.scss */
+.post_content .hide_content {
+  background: url("../images/build/png_master_sprite.png") -128px 0;
+  cursor: pointer;
+  height: 0;
+  overflow: hidden;
+  padding-top: 19px;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  width: 19px;
+}
+
+/* line 195, ../sass/_320.scss */
+.post_content .hide_content:hover {
+  background-position: -128px -19px;
+}
+
+/* line 199, ../sass/_320.scss */
+.post_content p {
+  border-bottom: 1px solid #e5e5e5;
+  line-height: 18px;
+  margin: 0 0 30px 0;
+  padding: 0 80px 30px 0;
+}
+
+/* line 206, ../sass/_320.scss */
+.post_content .img_list li {
+  border-top: 1px solid #e5e5e5;
+  margin: 30px 0 0 0;
+  padding: 30px 0 0 0;
+}
+
+/* line 212, ../sass/_320.scss */
+.post_content .img_list li:first-child {
+  border-top: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 218, ../sass/_320.scss */
+.post_content .img_list li img {
+  display: block;
+  width: 100%;
+  -moz-box-shadow: rgba(0, 0, 0, 0.12) 0 3px 7px;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.12) 0 3px 7px;
+  -o-box-shadow: rgba(0, 0, 0, 0.12) 0 3px 7px;
+  box-shadow: rgba(0, 0, 0, 0.12) 0 3px 7px;
+}
+
+/* line 229, ../sass/_320.scss */
+.v26 .post_head_active,
+.v26 .post_head:hover {
+  background: #595959;
+}
+
+/* line 232, ../sass/_320.scss */
 .informatics .post_head_active,
 .informatics .post_head:hover {
-  background: aqua;
+  background: #ff0000;
+}
+
+/* line 235, ../sass/_320.scss */
+.fight_for_fandom .post_head_active,
+.fight_for_fandom .post_head:hover {
+  background: #ffd200;
+}
+
+/* line 238, ../sass/_320.scss */
+.travel_app .post_head_active,
+.travel_app .post_head:hover {
+  background: #00a2bd;
+}
+
+/* line 241, ../sass/_320.scss */
+.delta_gold .post_head_active,
+.delta_gold .post_head:hover {
+  background: #e31836;
+}
+
+/* line 244, ../sass/_320.scss */
+.cash_tracker .post_head_active,
+.cash_tracker .post_head:hover {
+  background: #0c83cc;
+}
+
+/* line 247, ../sass/_320.scss */
+.clear_channel_radio .post_head_active,
+.clear_channel_radio .post_head:hover {
+  background: #e10019;
+}
+
+/* line 250, ../sass/_320.scss */
+.clear_channel_outdoor .post_head_active,
+.clear_channel_outdoor .post_head:hover {
+  background: #026390;
+}
+
+/* line 253, ../sass/_320.scss */
+.ocelo .post_head_active,
+.ocelo .post_head:hover {
+  background: #ec008c;
 }

@@ -3,3 +3,10 @@
 //---------------------------------------------------
 
 @mixin transition_default { @include transition-property(all); @include transition-duration(0.3s); @include transition-timing-function(ease-in); }
+
+/*@mixin garamond { font-family: "Sentinel", "adobe-garamond-pro", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; font-weight: 400; }*/
+
+@mixin garamond-premier-pro-display-light { font-family: "garamond-premier-pro-display", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; font-weight: 300; }
+
+@mixin garamond-pro-regular { font-family: "adobe-garamond-pro", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; font-weight: 400; }
+@mixin garamond-pro-italic { font-family: "adobe-garamond-pro", Garamond, Baskerville, "Baskerville Old Face", "Times New Roman", serif; font-weight: 400; font-style: italic; }
