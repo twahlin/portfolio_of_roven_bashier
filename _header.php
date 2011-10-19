@@ -45,6 +45,35 @@
 
 <!-- http://t.co/y1jPVnT -->
 <link rel="canonical" href="/">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<script type="text/javascript" src="http://use.typekit.com/bct2onq.js"></script>
+<script type="text/javascript">
+  (function() {
+      var custom_font = 'h3, .info'
+    $(document).ready(function() {
+      // As soon as the DOM is ready, make the example invisible
+      $(custom_font).css('visibility', 'hidden');
+    });
+    try {
+      Typekit.load({
+        active: function() {
+          // As soon as the fonts are active, fade in the example
+          // Don't fade in browsers that don't do proper opacity, like IE
+          if (jQuery.support.opacity) {
+            $(custom_font).css('visibility', 'visible').hide().fadeIn();
+          } else {
+            $(custom_font).css('visibility', 'visible');
+          }
+        },
+        inactive: function() {
+          // If the fonts are inactive, just show the example
+          // You can apply fallback styles using the wf-inactive class in your CSS
+          $(custom_font).css('visibility', 'visible');
+        }
+      })
+    } catch(e) {}
+  })();
+</script>
 </head>
 
 <body>

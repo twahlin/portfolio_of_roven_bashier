@@ -2,7 +2,9 @@
 // for JS
 //---------------------------------------------------
 
-.hidden {
+.hidden,
+.js h3, 
+.js .post_content {
     display: none;
 }
 
