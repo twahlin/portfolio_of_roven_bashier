@@ -252,6 +252,7 @@ footer .info li a:hover {
   bottom: -100px;
   right: 0;
   z-index: 1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
   -moz-transition-property: all;
@@ -284,6 +285,7 @@ footer .info li a:hover {
 .img_preview_right .post_head:hover .title_wrap img,
 .img_preview_right .post_head_active .title_wrap img {
   bottom: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10000)";
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
   opacity: 100;
 }
