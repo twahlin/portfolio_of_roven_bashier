@@ -1,6 +1,15 @@
 $(document).ready(function() {
 
 
+    //Hide iphone bar
+    window.addEventListener("load",function() {
+        setTimeout(function(){
+            window.scrollTo(0, 1);
+        }, 0);
+    });
+    //End Hide iphone bar
+
+
     $('.post_content').addClass('hidden');   
     $('.post_content .hide_content').removeClass('hidden');    
 

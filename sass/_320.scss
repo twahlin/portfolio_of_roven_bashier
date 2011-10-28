@@ -25,7 +25,8 @@ body {
 
 .wrap {
     margin: 0 auto;  
-    width: 640px;
+    max-width: 670px;
+    padding: 0 15px;
 }
 
 .content_wrap {
@@ -189,7 +190,7 @@ footer .info li a:hover {
     overflow: hidden;
     padding-top: 19px;
     position: absolute; 
-    right: 0;       
+    right: 15px;       
     top: 30px;
     width: 19px;
 }
