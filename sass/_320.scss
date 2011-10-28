@@ -130,40 +130,7 @@ footer .info li a:hover {
 }
 
 .post_head .title_wrap span {
-    bottom: 0;  
-    position: absolute;
-    width: 500px;
-}
-
-.img_preview_left .post_head .title_wrap span {
-    left: -500px;      
-}
-
-.img_preview_right .post_head .title_wrap span {
-    right: -500px;
-}
-
-.post_head .title_wrap span img {
-    position: absolute;
-    bottom: -100px; 
-    right: 0; 
-    z-index: 1;
-    
-    @include opacity(0);
-    @include transition_default;      
-}
-
-.img_preview_left .post_head .title_wrap img { right: 0; }
-
-.img_preview_right .post_head .title_wrap img { left: 0; }
-
-.img_preview_left .post_head:hover .title_wrap img,
-.img_preview_left .post_head_active .title_wrap img,
-.img_preview_right .post_head:hover .title_wrap img,
-.img_preview_right .post_head_active .title_wrap img {
-    bottom: 0;
-    
-    @include opacity(100);    
+    display: none;
 }
 
 //---------------------------------------------------
