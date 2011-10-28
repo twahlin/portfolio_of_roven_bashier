@@ -32,7 +32,7 @@ body {
 .content_wrap {
     border-bottom: 1px solid #e5e5e5;    
     overflow: hidden;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 
 //---------------------------------------------------
@@ -43,7 +43,7 @@ header {
     background: rgba(246,246,246,.8);
     position: absolute;
     text-align: center;
-    height: 200px; 
+    height: 100px; 
     width: 100%;
 }
 
@@ -51,7 +51,7 @@ h1 {
     background: url('../images/build/png_master_sprite.png') 0 0;
     display: block;
     height: 0;
-    margin: 80px auto 0 auto;
+    margin: 32px auto 0 auto;
     overflow: hidden;
     padding-top: 41px;
     width: 126px;
@@ -63,16 +63,16 @@ h1 {
 
 footer {
     background: rgba(246,246,246,.8);    
-    height: 100px;
+    height: 50px;
     
     @include garamond-pro-italic;   
 }
 
 footer .info {
     color: #0bb6ca;    
-    font-size: 16px;
-    line-height: 20px;
-    padding-top: 30px;
+    font-size: 14px;
+    line-height: 16px;
+    padding-top: 8px;
     text-align: center;  
        
     @include garamond-pro-italic;   
@@ -93,10 +93,10 @@ footer .info li a:hover {
 
 .post_head {
     background: rgba(255,255,255,1) url('../images/build/bg_noise.jpg');
-    border-top: 1px solid #e5e5e5;    
+    border-top: 1px solid #e5e5e5;
     cursor: pointer;
     display: block;
-    height: 100px;
+    height: 50px;
     position: relative;
     text-align: center;
     z-index: 2;         
@@ -115,10 +115,10 @@ footer .info li a:hover {
 }
 
 .post_head .title_wrap h3 {
-    color: #bbb;
+    color: #666;
     display: inline;
-    font-size: 30px;
-    line-height: 100px;
+    font-size: 15px;
+    line-height: 50px;
     
     @include garamond-premier-pro-display-light;
 }
