@@ -1,5 +1,6 @@
 
 <script src="scripts/plugins.js"></script>
+<script src="scripts/libs/jquery-ui-1.8.16.custom.min.js"></script>
 <script src="scripts/script.js"></script>
 
 <!--[if (lt IE 9) & (!IEMobile)]>
