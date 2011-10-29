@@ -167,13 +167,14 @@ footer .info li a {
   color: #0bb6ca;
 }
 
-/* line 85, ../sass/_320.scss */
-footer .info li a:hover {
+/* line 86, ../sass/_320.scss */
+.no-touch footer .info li a:hover,
+footer .info li a:active {
   color: #0891a1;
   text-decoration: underline;
 }
 
-/* line 94, ../sass/_320.scss */
+/* line 95, ../sass/_320.scss */
 .post_head {
   background: white url("../images/build/bg_noise.jpg");
   border-top: 1px solid #e5e5e5;
@@ -185,35 +186,19 @@ footer .info li a:hover {
   z-index: 2;
 }
 
-/* line 105, ../sass/_320.scss */
-.post_head_active {
-  -moz-transition-property: all;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
-  -moz-transition-duration: 0.3s;
-  -webkit-transition-duration: 0.3s;
-  -o-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  -moz-transition-timing-function: ease-in;
-  -webkit-transition-timing-function: ease-in;
-  -o-transition-timing-function: ease-in;
-  transition-timing-function: ease-in;
-}
-
-/* line 108, ../sass/_320.scss */
+/* line 107, ../sass/_320.scss */
 .post_head_active,
-.post_head:hover {
+.no-touch .post_head:hover {
   background: #666;
 }
 
-/* line 112, ../sass/_320.scss */
+/* line 111, ../sass/_320.scss */
 .post .post_head .title_wrap {
   display: inline-block;
   position: relative;
 }
 
-/* line 117, ../sass/_320.scss */
+/* line 116, ../sass/_320.scss */
 .post_head .title_wrap h3 {
   color: #666;
   display: inline;
@@ -223,19 +208,19 @@ footer .info li a:hover {
   font-weight: 300;
 }
 
-/* line 127, ../sass/_320.scss */
-.post_head:hover .title_wrap h3,
+/* line 126, ../sass/_320.scss */
+.no-touch .post_head:hover .title_wrap h3,
 .post_head_active .title_wrap h3 {
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
 }
 
-/* line 132, ../sass/_320.scss */
+/* line 131, ../sass/_320.scss */
 .post_head .title_wrap span {
   display: none;
 }
 
-/* line 140, ../sass/_320.scss */
+/* line 139, ../sass/_320.scss */
 .post_content {
   background: #fff;
   position: relative;
@@ -243,13 +228,13 @@ footer .info li a:hover {
   z-index: 2;
 }
 
-/* line 148, ../sass/_320.scss */
+/* line 147, ../sass/_320.scss */
 .post_content .wrap {
   position: relative;
   padding-top: 26px;
 }
 
-/* line 153, ../sass/_320.scss */
+/* line 152, ../sass/_320.scss */
 .post_content .hide_content {
   background: url("../images/build/png_master_sprite.png") -128px 0;
   cursor: pointer;
@@ -263,7 +248,8 @@ footer .info li a:hover {
 }
 
 /* line 165, ../sass/_320.scss */
-.post_content .hide_content:hover {
+.no-touch .post_content .hide_content:hover,
+.post_content .hide_content:active {
   background-position: -128px -19px;
 }
 
@@ -301,55 +287,55 @@ footer .info li a:hover {
 
 /* line 199, ../sass/_320.scss */
 .v26 .post_head_active,
-.v26 .post_head:hover {
+.no-touch .v26 .post_head:hover {
   background: #595959;
 }
 
 /* line 202, ../sass/_320.scss */
 .informatics .post_head_active,
-.informatics .post_head:hover {
+.no-touch .informatics .post_head:hover {
   background: #ff0000;
 }
 
 /* line 205, ../sass/_320.scss */
 .fight_for_fandom .post_head_active,
-.fight_for_fandom .post_head:hover {
+.no-touch .fight_for_fandom .post_head:hover {
   background: #ffd200;
 }
 
 /* line 208, ../sass/_320.scss */
 .travel_app .post_head_active,
-.travel_app .post_head:hover {
+.no-touch .travel_app .post_head:hover {
   background: #00a2bd;
 }
 
 /* line 211, ../sass/_320.scss */
 .delta_gold .post_head_active,
-.delta_gold .post_head:hover {
+.no-touch .delta_gold .post_head:hover {
   background: #e31836;
 }
 
 /* line 214, ../sass/_320.scss */
 .cash_tracker .post_head_active,
-.cash_tracker .post_head:hover {
+.no-touch .cash_tracker .post_head:hover {
   background: #0c83cc;
 }
 
 /* line 217, ../sass/_320.scss */
 .clear_channel_radio .post_head_active,
-.clear_channel_radio .post_head:hover {
+.no-touch .clear_channel_radio .post_head:hover {
   background: #e10019;
 }
 
 /* line 220, ../sass/_320.scss */
 .clear_channel_outdoor .post_head_active,
-.clear_channel_outdoor .post_head:hover {
+.no-touch .clear_channel_outdoor .post_head:hover {
   background: #026390;
 }
 
 /* line 223, ../sass/_320.scss */
 .ocelo .post_head_active,
-.ocelo .post_head:hover {
+.no-touch .ocelo .post_head:hover {
   background: #ec008c;
 }
 
@@ -375,13 +361,36 @@ footer .info li a:hover {
   }
 
   /* line 29, ../sass/_768.scss */
+  .post_head_active {
+    -moz-transition-property: all;
+    -webkit-transition-property: all;
+    -o-transition-property: all;
+    transition-property: all;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+  }
+
+  /* line 31, ../sass/_768.scss */
   .post_head .title_wrap h3 {
     color: #bbb;
     font-size: 30px;
     line-height: 100px;
   }
 
-  /* line 35, ../sass/_768.scss */
+  /* line 38, ../sass/_768.scss */
+  .no-touch .post_head:hover .title_wrap h3,
+  .post_head_active .title_wrap h3 {
+    color: #fff;
+    text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
+  }
+
+  /* line 43, ../sass/_768.scss */
   .post_head .title_wrap span {
     bottom: 0;
     display: block;
@@ -389,17 +398,17 @@ footer .info li a:hover {
     width: 500px;
   }
 
-  /* line 42, ../sass/_768.scss */
+  /* line 50, ../sass/_768.scss */
   .img_preview_left .post_head .title_wrap span {
     left: -500px;
   }
 
-  /* line 44, ../sass/_768.scss */
+  /* line 52, ../sass/_768.scss */
   .img_preview_right .post_head .title_wrap span {
     right: -500px;
   }
 
-  /* line 46, ../sass/_768.scss */
+  /* line 54, ../sass/_768.scss */
   .post_head .title_wrap span img {
     position: absolute;
     bottom: -100px;
@@ -422,20 +431,20 @@ footer .info li a:hover {
     transition-timing-function: ease-in;
   }
 
-  /* line 56, ../sass/_768.scss */
+  /* line 64, ../sass/_768.scss */
   .img_preview_left .post_head .title_wrap img {
     right: 0;
   }
 
-  /* line 58, ../sass/_768.scss */
+  /* line 66, ../sass/_768.scss */
   .img_preview_right .post_head .title_wrap img {
     left: 0;
   }
 
-  /* line 63, ../sass/_768.scss */
-  .img_preview_left .post_head:hover .title_wrap img,
+  /* line 71, ../sass/_768.scss */
+  .no-touch .img_preview_left .post_head:hover .title_wrap img,
   .img_preview_left .post_head_active .title_wrap img,
-  .img_preview_right .post_head:hover .title_wrap img,
+  .no-touch .img_preview_right .post_head:hover .title_wrap img,
   .img_preview_right .post_head_active .title_wrap img {
     bottom: 0;
     -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10000)";
@@ -443,12 +452,12 @@ footer .info li a:hover {
     opacity: 100;
   }
 
-  /* line 73, ../sass/_768.scss */
+  /* line 81, ../sass/_768.scss */
   footer {
     height: 100px;
   }
 
-  /* line 75, ../sass/_768.scss */
+  /* line 83, ../sass/_768.scss */
   footer .info {
     font-size: 16px;
     line-height: 20px;

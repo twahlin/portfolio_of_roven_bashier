@@ -82,7 +82,8 @@ footer .info li a {
     color: #0bb6ca;
 }
 
-footer .info li a:hover {
+.no-touch footer .info li a:hover,
+footer .info li a:active {
     color: #0891a1;
     text-decoration: underline;
 }
@@ -102,10 +103,8 @@ footer .info li a:hover {
     z-index: 2;         
 } 
 
-.post_head_active { @include transition_default; }
-
 .post_head_active,
-.post_head:hover {
+.no-touch .post_head:hover {
     background: #666;   
 }
 
@@ -123,7 +122,7 @@ footer .info li a:hover {
     @include garamond-premier-pro-display-light;
 }
 
-.post_head:hover .title_wrap h3,
+.no-touch .post_head:hover .title_wrap h3,
 .post_head_active .title_wrap h3 {
     color: #fff;
     @include text-shadow(rgba(0,0,0, 0.2) -1px -1px 0);     
@@ -162,7 +161,8 @@ footer .info li a:hover {
     width: 19px;
 }
 
-.post_content .hide_content:hover {
+.no-touch .post_content .hide_content:hover,
+.post_content .hide_content:active {
     background-position: -128px -19px;
 }
 
@@ -196,31 +196,31 @@ footer .info li a:hover {
 // Post Specific Styling
 //---------------------------------------------------
 .v26 .post_head_active,
-.v26 .post_head:hover { background: #595959; }
+.no-touch .v26 .post_head:hover { background: #595959; }
 
 .informatics .post_head_active,
-.informatics .post_head:hover { background: #ff0000; }
+.no-touch .informatics .post_head:hover { background: #ff0000; }
 
 .fight_for_fandom .post_head_active,
-.fight_for_fandom .post_head:hover { background: #ffd200; }
+.no-touch .fight_for_fandom .post_head:hover { background: #ffd200; }
 
 .travel_app .post_head_active,
-.travel_app .post_head:hover { background: #00a2bd; }
+.no-touch .travel_app .post_head:hover { background: #00a2bd; }
 
 .delta_gold .post_head_active,
-.delta_gold .post_head:hover { background: #e31836; }
+.no-touch .delta_gold .post_head:hover { background: #e31836; }
 
 .cash_tracker .post_head_active,
-.cash_tracker .post_head:hover { background: #0c83cc; }
+.no-touch .cash_tracker .post_head:hover { background: #0c83cc; }
 
 .clear_channel_radio .post_head_active,
-.clear_channel_radio .post_head:hover { background: #e10019; }
+.no-touch .clear_channel_radio .post_head:hover { background: #e10019; }
 
 .clear_channel_outdoor .post_head_active,
-.clear_channel_outdoor .post_head:hover { background: #026390; }
+.no-touch .clear_channel_outdoor .post_head:hover { background: #026390; }
 
 .ocelo .post_head_active,
-.ocelo .post_head:hover { background: #ec008c; }
+.no-touch .ocelo .post_head:hover { background: #ec008c; }
 
 
 

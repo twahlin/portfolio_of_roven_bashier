@@ -26,10 +26,18 @@ h1 {
     height: 100px;
 }
 
+.post_head_active { @include transition_default; }
+
 .post_head .title_wrap h3 { 
     color: #bbb;
     font-size: 30px; 
     line-height: 100px;
+}
+
+.no-touch .post_head:hover .title_wrap h3,
+.post_head_active .title_wrap h3 {
+    color: #fff;
+    @include text-shadow(rgba(0,0,0, 0.2) -1px -1px 0);     
 }
 
 .post_head .title_wrap span {
@@ -57,9 +65,9 @@ h1 {
 
 .img_preview_right .post_head .title_wrap img { left: 0; }
 
-.img_preview_left .post_head:hover .title_wrap img,
+.no-touch .img_preview_left .post_head:hover .title_wrap img,
 .img_preview_left .post_head_active .title_wrap img,
-.img_preview_right .post_head:hover .title_wrap img,
+.no-touch .img_preview_right .post_head:hover .title_wrap img,
 .img_preview_right .post_head_active .title_wrap img {
     bottom: 0;
     
