@@ -13,15 +13,12 @@ $(document).ready(function() {
     $('.post_content').addClass('hidden');   
     $('.post_content .hide_content').removeClass('hidden');    
     
-<<<<<<< HEAD
-=======
     //when close button is clicked, scroll to top    
     $('.hide_content').click(function() {
         $('html, body').animate({
             scrollTop: $('header').offset().top
         }, 1000);
     });
->>>>>>> Edits for touch class devices
     
     //close button closes drawer
     $('.hide_content').click(function() {
@@ -30,29 +27,6 @@ $(document).ready(function() {
         
         });
     });    
-<<<<<<< HEAD
-    
-    //toggle active class and open project drawer    
-    $('.post_head').click(function() {
-     $(this).toggleClass('post_head_active');
-     $(this).next().slideToggle('slow', function() {
-    
-        });
-    });
-    
-    //when close button is clicked, scroll to top    
-    $('.hide_content').click(function() {
-        $('html, body').animate({
-            scrollTop: $('header').offset().top
-        }, 1000);
-    }); 
-      
-    //better to animate opacity here item fade in
-    // $('.post').css("display", "none");
-    //   
-    // $('.post').each(function(index) {
-    //     $(this).delay(100*index).fadeIn(1000);
-=======
     // 
     // 
     // //toggle active class and open project drawer    
@@ -61,7 +35,6 @@ $(document).ready(function() {
     // 
     //     });
     //     $(this).toggleClass('post_head_active');
->>>>>>> Edits for touch class devices
     // });
     //   
     // //better to animate opacity here item fade in
@@ -89,7 +62,6 @@ $(document).ready(function() {
 	});
 
       
-    
 });
 
 
