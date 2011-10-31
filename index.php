@@ -6,7 +6,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>space150 - Version 26</h3>
-                <span><img src="images/build/preview_img_v26.png" /></span>
+                <span><img src="images/build/preview_img_v26.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -28,7 +28,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>3M Informatics</h3>
-                <span><img src="images/build/preview_img_informatics.png" /></span>
+                <span><img src="images/build/preview_img_informatics.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -50,7 +50,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>Buffalo Wild Wings<sup>®</sup> - Fight For Fandom</h3>
-                <span><img src="images/build/preview_img_fight_for_fandom.png" /></span>
+                <span><img src="images/build/preview_img_fight_for_fandom.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -72,7 +72,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>American Express<sup>®</sup> Travel App Site</h3>
-                <span><img src="images/build/preview_img_travel_app.png" /></span>
+                <span><img src="images/build/preview_img_travel_app.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -94,7 +94,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>American Express<sup>®</sup> Delta Gold Postcards</h3>
-                <span><img src="images/build/preview_img_delta_gold.png" /></span>
+                <span><img src="images/build/preview_img_delta_gold.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -116,7 +116,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>American Express<sup>®</sup> Cash Tracker</h3>
-                <span><img src="images/build/preview_img_cash_tracker.png" /></span>
+                <span><img src="images/build/preview_img_cash_tracker.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -138,7 +138,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>Clear Channel Radio</h3>
-                <span><img src="images/build/preview_img_clear_channel_radio.png" /></span>
+                <span><img src="images/build/preview_img_clear_channel_radio.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -160,7 +160,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>Clear Channel Outdoor</h3>
-                <span><img src="images/build/preview_img_clear_channel_outdoor.png" /></span>
+                <span><img src="images/build/preview_img_clear_channel_outdoor.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">
@@ -182,7 +182,7 @@
         <a class="post_head">
             <div class="title_wrap">
                 <h3>3M O-Celo Sponges</h3>
-                <span><img src="images/build/preview_img_ocelo.png" /></span>
+                <span><img src="images/build/preview_img_ocelo.png" alt="preview image" /></span>
             </div> 
         </a>
         <div class="post_content">

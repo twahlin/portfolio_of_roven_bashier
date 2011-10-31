@@ -11,11 +11,22 @@
 //---------------------------------------------------
 
 header {
-    height: 200px; 
+    height: 200px;
+    position: absolute;
+    z-index: 1; 
 }
 
 h1 {
     margin: 80px auto 0 auto;
+}
+
+//---------------------------------------------------
+// Footer
+//---------------------------------------------------
+
+footer { 
+    position: relative; 
+    z-index: 1;
 }
 
 //---------------------------------------------------
@@ -25,8 +36,6 @@ h1 {
 .post_head {
     height: 100px;
 }
-
-.post_head_active { @include transition_default; }
 
 .post_head .title_wrap h3 { 
     color: #bbb;
@@ -72,6 +81,43 @@ h1 {
     bottom: 0;
     
     @include opacity(100);    
+}
+
+//---------------------------------------------------
+// Post Content
+//---------------------------------------------------
+
+.post_content {
+    padding-bottom: 30px;
+}
+
+.post_content .wrap {
+    padding-top: 26px;
+}
+
+.post_content .hide_content {
+    background: url('../images/build/png_master_sprite.png') -128px 0;
+    padding-top: 19px;
+    position: absolute; 
+    right: 15px;       
+    top: 30px;
+    width: 19px;
+}
+
+.no-touch .post_content .hide_content:hover,
+.post_content .hide_content:active {
+    background-position: -128px -19px;
+}
+
+.post_content p {
+    line-height: 18px;
+    margin: 0 0 30px 0;
+    padding: 0 80px 30px 0;
+}
+
+.post_content .img_list li {   
+    margin: 30px 0 0 0;
+    padding: 30px 0 0 0;
 }
 
 //---------------------------------------------------

@@ -41,10 +41,11 @@ body {
 
 header {
     background: rgba(246,246,246,.8);
-    position: absolute;
+    position: fixed;
     text-align: center;
     height: 100px; 
     width: 100%;
+    z-index: 100;
 }
 
 h1 {
@@ -64,6 +65,11 @@ h1 {
 footer {
     background: rgba(246,246,246,.8);    
     height: 50px;
+    position: fixed;
+    left:0;
+    right: 0;
+    bottom: 0;
+    z-index:100;
     
     @include garamond-pro-italic;   
 }
@@ -103,6 +109,8 @@ footer .info li a:active {
     z-index: 2;         
 } 
 
+.post_head_active { @include transition_default; }
+
 .post_head_active,
 .no-touch .post_head:hover {
     background: #666;   
@@ -140,43 +148,43 @@ footer .info li a:active {
     //this needs a BG to cover img_preview with z-index
     background: #fff;
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
     z-index: 2;
 }
 
 .post_content .wrap {
     position: relative;
-    padding-top: 26px;
+    padding-top: 13px;
 }
 
 .post_content .hide_content {
-    background: url('../images/build/png_master_sprite.png') -128px 0;
+    background: url('../images/build/png_master_sprite.png') -152px 0;
     cursor: pointer;
     height: 0;
     overflow: hidden;
-    padding-top: 19px;
+    padding-top: 9px;
     position: absolute; 
     right: 15px;       
-    top: 30px;
-    width: 19px;
+    top: 15px;
+    width: 9px;
 }
 
 .no-touch .post_content .hide_content:hover,
 .post_content .hide_content:active {
-    background-position: -128px -19px;
+    background-position: -152px -9px;
 }
 
 .post_content p {
     border-bottom: 1px solid #e5e5e5;
-    line-height: 18px;
-    margin: 0 0 30px 0;
-    padding: 0 80px 30px 0;
+    line-height: 15px;
+    margin: 0 0 15px 0;
+    padding: 0 40px 10px 0;
 }
 
 .post_content .img_list li {
     border-top: 1px solid #e5e5e5;    
-    margin: 30px 0 0 0;
-    padding: 30px 0 0 0;
+    margin: 15px 0 0 0;
+    padding: 15px 0 0 0;
 }
 
 .post_content .img_list li:first-child {
@@ -196,30 +204,39 @@ footer .info li a:active {
 // Post Specific Styling
 //---------------------------------------------------
 .v26 .post_head_active,
+.v26 .post_head:active,
 .no-touch .v26 .post_head:hover { background: #595959; }
 
 .informatics .post_head_active,
+.informatics .post_head:active,
 .no-touch .informatics .post_head:hover { background: #ff0000; }
 
 .fight_for_fandom .post_head_active,
+.fight_for_fandom .post_head:active,
 .no-touch .fight_for_fandom .post_head:hover { background: #ffd200; }
 
 .travel_app .post_head_active,
+.travel_app .post_head:active,
 .no-touch .travel_app .post_head:hover { background: #00a2bd; }
 
 .delta_gold .post_head_active,
+.delta_gold .post_head:active,
 .no-touch .delta_gold .post_head:hover { background: #e31836; }
 
 .cash_tracker .post_head_active,
+.cash_tracker .post_head:active,
 .no-touch .cash_tracker .post_head:hover { background: #0c83cc; }
 
 .clear_channel_radio .post_head_active,
+.clear_channel_radio .post_head:active,
 .no-touch .clear_channel_radio .post_head:hover { background: #e10019; }
 
 .clear_channel_outdoor .post_head_active,
+.clear_channel_outdoor .post_head:active,
 .no-touch .clear_channel_outdoor .post_head:hover { background: #026390; }
 
 .ocelo .post_head_active,
+.ocelo .post_head:active,
 .no-touch .ocelo .post_head:hover { background: #ec008c; }
 
 
