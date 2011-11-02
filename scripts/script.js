@@ -32,12 +32,14 @@ $(document).ready(function() {
 			});
 			$(this).next('.post_content').slideToggle('fast',function() {
 				$(this).prev().toggleClass('post_head_active');
-                // current_id = $(this).parent().attr('id');
-                // $.scrollTo('#' + current_id, 500);
+                //if the header is fixed get scrolltop position of element you're scrolling to. get the hight of the fixed header and add to the scrolltop position
+                //get current scroll position and calculate
+                current_id = $(this).parent().attr('id');                
+                $.scrollTo('#' + current_id, 500);
 			});
 		}
 		return false;
-	});
+	}); 
     // End custom accordion functionality
     
     // // Scrollto Functionality based on browser width
@@ -71,31 +73,30 @@ $(document).ready(function() {
     
     jQuery.event.add(window, "load", resizeFrame);
     jQuery.event.add(window, "resize", resizeFrame);
-
-    // function resizeFrame() {
-    //     if($(window).width() >= 768) {
-    //         $('.post_head').click(function() {  
-    //             var current_id = $(this).parent().attr('id');  
-    //             // console.log(current_id);        
-    //             // $('html,body').animate({scrollTop: $("#"+current_id).offset().top},'fast');
-    //             console.log($(this).parent().attr('id'));
-    //             $("#"+current_id).offset().top
-    //             console.log("#"+current_id); 
-    //         });            
-    //         // console.log('above 768'); 
-    //     }
-    //      else {
-    //             // $('.post_head').click(function() {  
-    //             //     var current_id = $(this).parent().attr('id');  
-    //             //     // console.log(current_id);        
-    //             //     $('html,body').animate({scrollTop: $("#"+current_id).offset().top},'fast');
-    //             // });    
-    //             // console.log('above 768');
-    //         }
-    // }
-    
     
     function resizeFrame() {
+        if($(window).width() >= 768) {
+            $('.post_head').click(function() {  
+                var current_id = $(this).parent().attr('id');  
+                console.log(current_id);        
+                $('html,body').animate({scrollTop: $("#"+current_id).offset().top},'fast');
+                console.log($(this).parent().attr('id'));
+                $("#"+current_id).offset().top
+                console.log("#"+current_id); 
+            });            
+            console.log('above 768'); 
+        }
+         else {
+                // $('.post_head').click(function() {  
+                //     var current_id = $(this).parent().attr('id');  
+                //     // console.log(current_id);        
+                //     $('html,body').animate({scrollTop: $("#"+current_id).offset().top},'fast');
+                // });    
+                // console.log('above 768');
+            }
+    }
+    
+    function resizeFramez() {
         $('.post_head').click(function () {
            console.log('in here'); 
         });
