@@ -89,7 +89,7 @@ abbr[title] {
 
 /* line 7, ../sass/_320.scss */
 .hidden,
-.js h3,
+.js h2,
 .js .post_content {
   display: none;
 }
@@ -118,7 +118,7 @@ body {
 .content_wrap {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
-  padding-top: 100px;
+  padding-top: 64px;
 }
 
 /* line 42, ../sass/_320.scss */
@@ -126,7 +126,7 @@ header {
   background: rgba(246, 246, 246, 0.8);
   position: fixed;
   text-align: center;
-  height: 100px;
+  height: 64px;
   width: 100%;
   z-index: 100;
 }
@@ -136,7 +136,7 @@ h1 {
   background: url("../images/build/png_master_sprite.png") 0 0;
   display: block;
   height: 0;
-  margin: 32px auto 0 auto;
+  margin: 14px auto 0 auto;
   overflow: hidden;
   padding-top: 41px;
   width: 126px;
@@ -221,7 +221,7 @@ footer .info li a:active {
 }
 
 /* line 124, ../sass/_320.scss */
-.post_head .title_wrap h3 {
+.post_head .title_wrap h2 {
   color: #666;
   display: inline;
   font-size: 15px;
@@ -231,8 +231,8 @@ footer .info li a:active {
 }
 
 /* line 134, ../sass/_320.scss */
-.no-touch .post_head:hover .title_wrap h3,
-.post_head_active .title_wrap h3 {
+.no-touch .post_head:hover .title_wrap h2,
+.post_head_active .title_wrap h2 {
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
 }
@@ -400,15 +400,15 @@ footer .info li a:active {
   }
 
   /* line 40, ../sass/_768.scss */
-  .post_head .title_wrap h3 {
+  .post_head .title_wrap h2 {
     color: #bbb;
     font-size: 30px;
     line-height: 100px;
   }
 
   /* line 47, ../sass/_768.scss */
-  .no-touch .post_head:hover .title_wrap h3,
-  .post_head_active .title_wrap h3 {
+  .no-touch .post_head:hover .title_wrap h2,
+  .post_head_active .title_wrap h2 {
     color: #fff;
     text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
   }
@@ -522,5 +522,20 @@ footer .info li a:active {
     font-size: 16px;
     line-height: 20px;
     padding-top: 30px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
+  /* line 1, ../sass/_2x.scss */
+  h1 {
+    background-image: url("../images/build/2x/logo.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+
+  /* line 7, ../sass/_2x.scss */
+  .post_content .hide_content {
+    background-image: url("../images/build/2x/close.png");
+    background-size: 100%;
+    background-position: 0 0;
   }
 }

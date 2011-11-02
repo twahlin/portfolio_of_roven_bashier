@@ -37,14 +37,14 @@ footer {
     height: 100px;
 }
 
-.post_head .title_wrap h3 { 
+.post_head .title_wrap h2 { 
     color: #bbb;
     font-size: 30px; 
     line-height: 100px;
 }
 
-.no-touch .post_head:hover .title_wrap h3,
-.post_head_active .title_wrap h3 {
+.no-touch .post_head:hover .title_wrap h2,
+.post_head_active .title_wrap h2 {
     color: #fff;
     @include text-shadow(rgba(0,0,0, 0.2) -1px -1px 0);     
 }

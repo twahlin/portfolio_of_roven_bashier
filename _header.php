@@ -50,7 +50,7 @@
 <script type="text/javascript" src="http://use.typekit.com/bct2onq.js"></script>
 <script type="text/javascript">
   (function() {
-      var custom_font = 'h3, .info'
+      var custom_font = 'h2, .info'
     $(document).ready(function() {
       // As soon as the DOM is ready, make the example invisible
       $(custom_font).css('visibility', 'hidden');

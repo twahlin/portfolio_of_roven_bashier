@@ -3,7 +3,7 @@
 //---------------------------------------------------
 
 .hidden,
-.js h3, 
+.js h2, 
 .js .post_content {
     display: none;
 }
@@ -32,7 +32,7 @@ body {
 .content_wrap {
     border-bottom: 1px solid #e5e5e5;    
     overflow: hidden;
-    padding-top: 100px;
+    padding-top: 64px;
 }
 
 //---------------------------------------------------
@@ -43,7 +43,7 @@ header {
     background: rgba(246,246,246,.8);
     position: fixed;
     text-align: center;
-    height: 100px; 
+    height: 64px; 
     width: 100%;
     z-index: 100;
 }
@@ -52,7 +52,7 @@ h1 {
     background: url('../images/build/png_master_sprite.png') 0 0;
     display: block;
     height: 0;
-    margin: 32px auto 0 auto;
+    margin: 14px auto 0 auto;
     overflow: hidden;
     padding-top: 41px;
     width: 126px;
@@ -121,7 +121,7 @@ footer .info li a:active {
     position: relative;
 }
 
-.post_head .title_wrap h3 {
+.post_head .title_wrap h2 {
     color: #666;
     display: inline;
     font-size: 15px;
@@ -130,8 +130,8 @@ footer .info li a:active {
     @include garamond-premier-pro-display-light;
 }
 
-.no-touch .post_head:hover .title_wrap h3,
-.post_head_active .title_wrap h3 {
+.no-touch .post_head:hover .title_wrap h2,
+.post_head_active .title_wrap h2 {
     color: #fff;
     @include text-shadow(rgba(0,0,0, 0.2) -1px -1px 0);     
 }
