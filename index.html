@@ -1,4 +1,87 @@
-<?php include('_header.php');?>
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]-->
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" manifest="default.appcache?v=1" lang="en"><!--<![endif]-->
+
+<head>
+<meta charset="utf-8">
+
+<title>The Portfolio of Roven Bashier</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- http://t.co/dKP3o1e -->
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, target-densitydpi=160dpi, initial-scale=1">
+<meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+
+<!-- For all browsers -->
+<link rel="stylesheet" href="styles/style.css?v=1">
+
+<!-- JavaScript at bottom except for Modernizr -->
+<script src="scripts/libs/modernizr-1.7.min.js"></script>
+
+<!-- For iPhone 4 -->
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/h/apple-touch-icon.png">
+<!-- For iPad 1-->
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/m/apple-touch-icon.png">
+<!-- For iPhone 3G, iPod Touch and Android -->
+<link rel="apple-touch-icon-precomposed" href="images/l/apple-touch-icon-precomposed.png">
+<!-- For Nokia -->
+<link rel="shortcut icon" href="images/l/apple-touch-icon.png">
+<!-- For everything else -->
+<link rel="shortcut icon" href="favicon.ico">
+
+<!--iOS. Delete if not required -->
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+<!--Microsoft. Delete if not required -->
+<meta http-equiv="cleartype" content="on">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+<!-- http://t.co/y1jPVnT -->
+<link rel="canonical" href="/">
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.js"></script>
+<script type="text/javascript" src="http://use.typekit.com/bct2onq.js"></script>
+<script type="text/javascript">
+  (function() {
+      var custom_font = 'h2, .info'
+    $(document).ready(function() {
+      // As soon as the DOM is ready, make the example invisible
+      $(custom_font).css('visibility', 'hidden');
+    });
+    try {
+      Typekit.load({
+        active: function() {
+          // As soon as the fonts are active, fade in the example
+          // Don't fade in browsers that don't do proper opacity, like IE
+          if (jQuery.support.opacity) {
+            $(custom_font).css('visibility', 'visible').hide().fadeIn();
+          } else {
+            $(custom_font).css('visibility', 'visible');
+          }
+        },
+        inactive: function() {
+          // If the fonts are inactive, just show the example
+          // You can apply fallback styles using the wf-inactive class in your CSS
+          $(custom_font).css('visibility', 'visible');
+        }
+      })
+    } catch(e) {}
+  })();
+</script>
+</head>
+
+<body>
+    <header>
+        <div class="wrap">
+            <h1>Roven Bashier | Interactive Designer</h1>
+        </div>    
+    </header>
 <div class="content_wrap">   
     
     <!-- This is the start of a post -->
@@ -201,7 +284,26 @@
     
     
 </div><!-- content_wrap -->
-<?php include('_footer.php');?>
+
+<script src="scripts/plugins.js"></script>
+<script src="scripts/libs/jquery-scrollTo.js"></script>
+<script src="scripts/script.js"></script>
+
+<!--[if (lt IE 9) & (!IEMobile)]>
+<script src="scripts/libs/DOMAssistantCompressed-2.8.js"></script>
+<script src="scripts/libs/selectivizr-1.0.1.js"></script>
+<script src="scripts/libs/respond.src.js"></script>
+<![endif]-->
+    <footer>
+        <div class="wrap">
+            <ul class="info">
+               <li><a href="mailto:&#114;&#111;&#118;&#101;&#110;&#64;&#114;&#111;&#118;&#101;&#110;&#98;&#97;&#115;&#104;&#105;&#101;&#114;&#46;&#99;&#111;&#109;">&#114;&#111;&#118;&#101;&#110;&#64;&#114;&#111;&#118;&#101;&#110;&#98;&#97;&#115;&#104;&#105;&#101;&#114;&#46;&#99;&#111;&#109;</a></li>
+               <li><a href="tel:612-702-4344">612.702.4344</a></li>
+            </ul>
+        </div>    
+    </footer>
+</body>
+</html>
 
 
 
