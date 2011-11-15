@@ -189,12 +189,7 @@ footer .info li a:active {
   position: relative;
 }
 
-<<<<<<< HEAD
-/* line 124, ../sass/_320.scss */
 .post_head .title_wrap h2 {
-=======
-.post_head .title_wrap h3 {
->>>>>>> Last commit before deleting SCSS for Delivery
   color: #666;
   display: inline;
   font-size: 15px;
@@ -203,14 +198,8 @@ footer .info li a:active {
   font-weight: 300;
 }
 
-<<<<<<< HEAD
-/* line 134, ../sass/_320.scss */
 .no-touch .post_head:hover .title_wrap h2,
 .post_head_active .title_wrap h2 {
-=======
-.no-touch .post_head:hover .title_wrap h3,
-.post_head_active .title_wrap h3 {
->>>>>>> Last commit before deleting SCSS for Delivery
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
 }
@@ -354,25 +343,14 @@ footer .info li a:active {
     height: 100px;
   }
 
-<<<<<<< HEAD
-  /* line 40, ../sass/_768.scss */
   .post_head .title_wrap h2 {
-=======
-  .post_head .title_wrap h3 {
->>>>>>> Last commit before deleting SCSS for Delivery
     color: #bbb;
     font-size: 30px;
     line-height: 100px;
   }
 
-<<<<<<< HEAD
-  /* line 47, ../sass/_768.scss */
   .no-touch .post_head:hover .title_wrap h2,
   .post_head_active .title_wrap h2 {
-=======
-  .no-touch .post_head:hover .title_wrap h3,
-  .post_head_active .title_wrap h3 {
->>>>>>> Last commit before deleting SCSS for Delivery
     color: #fff;
     text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
   }
@@ -476,14 +454,12 @@ footer .info li a:active {
   }
 }
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2) {
-  /* line 1, ../sass/_2x.scss */
   h1 {
     background-image: url("../images/build/2x/logo.png");
     background-size: 100%;
     background-repeat: no-repeat;
   }
 
-  /* line 7, ../sass/_2x.scss */
   .post_content .hide_content {
     background-image: url("../images/build/2x/close.png");
     background-size: 100%;
