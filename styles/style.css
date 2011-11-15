@@ -1,10 +1,7 @@
-/*@mixin garamond { font-family: "Sentinel", "adobe-garamond-pro", "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif; font-weight: 400; }*/
-/* line 1, ../sass/_reset.scss */
 html, body {
   height: 100%;
 }
 
-/* line 1, ../sass/_reset.scss */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
   margin: 0;
   padding: 0;
@@ -15,54 +12,44 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   background: transparent;
 }
 
-/* line 1, ../sass/_reset.scss */
 body {
   line-height: 1em;
 }
 
-/* line 1, ../sass/_reset.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 1, ../sass/_reset.scss */
 blockquote, q {
   quotes: none;
 }
 
-/* line 1, ../sass/_reset.scss */
 blockquote:before, blockquote:after, q:before, q:after {
   content: '';
   content: none;
 }
 
-/* line 1, ../sass/_reset.scss */
 :focus {
   outline: 0;
 }
 
-/* line 1, ../sass/_reset.scss */
 ins {
   text-decoration: none;
 }
 
-/* line 1, ../sass/_reset.scss */
 del {
   text-decoration: line-through;
 }
 
-/* line 1, ../sass/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 1, ../sass/_reset.scss */
 a {
   text-decoration: none;
 }
 
-/* line 1, ../sass/_reset.scss */
 input, textarea {
   border: none;
   outline: none;
@@ -70,31 +57,26 @@ input, textarea {
   padding: 0;
 }
 
-/* line 3, ../sass/_reset.scss */
 article, aside, figure, footer, header, hgroup, nav, section {
   display: block;
 }
 
-/* line 5, ../sass/_reset.scss */
 abbr[title] {
   border-bottom: 1px dotted;
   cursor: help;
 }
 
-/* line 9, ../sass/_reset.scss */
 * {
   -webkit-appearance: none;
   -webkit-text-size-adjust: none;
 }
 
-/* line 7, ../sass/_320.scss */
 .hidden,
 .js h2,
 .js .post_content {
   display: none;
 }
 
-/* line 15, ../sass/_320.scss */
 html {
   color: #666;
   font-family: "Helvetica Neue", Arial, sans-serif;
@@ -102,26 +84,22 @@ html {
   overflow-y: scroll;
 }
 
-/* line 22, ../sass/_320.scss */
 body {
   background: url("../images/build/bg_noise.jpg");
 }
 
-/* line 26, ../sass/_320.scss */
 .wrap {
   margin: 0 auto;
   max-width: 670px;
   padding: 0 15px;
 }
 
-/* line 32, ../sass/_320.scss */
 .content_wrap {
   border-bottom: 1px solid #e5e5e5;
   overflow: hidden;
   padding-top: 64px;
 }
 
-/* line 42, ../sass/_320.scss */
 header {
   background: rgba(246, 246, 246, 0.8);
   position: fixed;
@@ -131,7 +109,6 @@ header {
   z-index: 100;
 }
 
-/* line 51, ../sass/_320.scss */
 h1 {
   background: url("../images/build/png_master_sprite.png") 0 0;
   display: block;
@@ -142,7 +119,6 @@ h1 {
   width: 126px;
 }
 
-/* line 65, ../sass/_320.scss */
 footer {
   background: rgba(246, 246, 246, 0.8);
   height: 50px;
@@ -156,7 +132,6 @@ footer {
   font-style: italic;
 }
 
-/* line 77, ../sass/_320.scss */
 footer .info {
   color: #0bb6ca;
   font-size: 14px;
@@ -168,19 +143,16 @@ footer .info {
   font-style: italic;
 }
 
-/* line 87, ../sass/_320.scss */
 footer .info li a {
   color: #0bb6ca;
 }
 
-/* line 92, ../sass/_320.scss */
 .no-touch footer .info li a:hover,
 footer .info li a:active {
   color: #0891a1;
   text-decoration: underline;
 }
 
-/* line 101, ../sass/_320.scss */
 .post_head {
   background: white url("../images/build/bg_noise.jpg");
   border-top: 1px solid #e5e5e5;
@@ -192,7 +164,6 @@ footer .info li a:active {
   z-index: 2;
 }
 
-/* line 112, ../sass/_320.scss */
 .post_head_active {
   -moz-transition-property: all;
   -webkit-transition-property: all;
@@ -208,20 +179,22 @@ footer .info li a:active {
   transition-timing-function: ease-in;
 }
 
-/* line 115, ../sass/_320.scss */
 .post_head_active,
 .no-touch .post_head:hover {
   background: #666;
 }
 
-/* line 119, ../sass/_320.scss */
 .post .post_head .title_wrap {
   display: inline-block;
   position: relative;
 }
 
+<<<<<<< HEAD
 /* line 124, ../sass/_320.scss */
 .post_head .title_wrap h2 {
+=======
+.post_head .title_wrap h3 {
+>>>>>>> Last commit before deleting SCSS for Delivery
   color: #666;
   display: inline;
   font-size: 15px;
@@ -230,19 +203,22 @@ footer .info li a:active {
   font-weight: 300;
 }
 
+<<<<<<< HEAD
 /* line 134, ../sass/_320.scss */
 .no-touch .post_head:hover .title_wrap h2,
 .post_head_active .title_wrap h2 {
+=======
+.no-touch .post_head:hover .title_wrap h3,
+.post_head_active .title_wrap h3 {
+>>>>>>> Last commit before deleting SCSS for Delivery
   color: #fff;
   text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
 }
 
-/* line 139, ../sass/_320.scss */
 .post_head .title_wrap span {
   display: none;
 }
 
-/* line 147, ../sass/_320.scss */
 .post_content {
   background: #fff;
   position: relative;
@@ -250,13 +226,11 @@ footer .info li a:active {
   z-index: 2;
 }
 
-/* line 155, ../sass/_320.scss */
 .post_content .wrap {
   position: relative;
   padding-top: 13px;
 }
 
-/* line 160, ../sass/_320.scss */
 .post_content .hide_content {
   background: url("../images/build/png_master_sprite.png") -152px 0;
   cursor: pointer;
@@ -269,13 +243,11 @@ footer .info li a:active {
   width: 9px;
 }
 
-/* line 173, ../sass/_320.scss */
 .no-touch .post_content .hide_content:hover,
 .post_content .hide_content:active {
   background-position: -152px -9px;
 }
 
-/* line 177, ../sass/_320.scss */
 .post_content p {
   border-bottom: 1px solid #e5e5e5;
   line-height: 15px;
@@ -283,21 +255,18 @@ footer .info li a:active {
   padding: 0 40px 10px 0;
 }
 
-/* line 184, ../sass/_320.scss */
 .post_content .img_list li {
   border-top: 1px solid #e5e5e5;
   margin: 15px 0 0 0;
   padding: 15px 0 0 0;
 }
 
-/* line 190, ../sass/_320.scss */
 .post_content .img_list li:first-child {
   border-top: none;
   margin: 0;
   padding: 0;
 }
 
-/* line 196, ../sass/_320.scss */
 .post_content .img_list li img {
   display: block;
   width: 100%;
@@ -307,63 +276,54 @@ footer .info li a:active {
   box-shadow: rgba(0, 0, 0, 0.12) 0 3px 7px;
 }
 
-/* line 208, ../sass/_320.scss */
 .v26 .post_head_active,
 .v26 .post_head:active,
 .no-touch .v26 .post_head:hover {
   background: #595959;
 }
 
-/* line 212, ../sass/_320.scss */
 .informatics .post_head_active,
 .informatics .post_head:active,
 .no-touch .informatics .post_head:hover {
   background: #ff0000;
 }
 
-/* line 216, ../sass/_320.scss */
 .fight_for_fandom .post_head_active,
 .fight_for_fandom .post_head:active,
 .no-touch .fight_for_fandom .post_head:hover {
   background: #ffd200;
 }
 
-/* line 220, ../sass/_320.scss */
 .travel_app .post_head_active,
 .travel_app .post_head:active,
 .no-touch .travel_app .post_head:hover {
   background: #00a2bd;
 }
 
-/* line 224, ../sass/_320.scss */
 .delta_gold .post_head_active,
 .delta_gold .post_head:active,
 .no-touch .delta_gold .post_head:hover {
   background: #e31836;
 }
 
-/* line 228, ../sass/_320.scss */
 .cash_tracker .post_head_active,
 .cash_tracker .post_head:active,
 .no-touch .cash_tracker .post_head:hover {
   background: #0c83cc;
 }
 
-/* line 232, ../sass/_320.scss */
 .clear_channel_radio .post_head_active,
 .clear_channel_radio .post_head:active,
 .no-touch .clear_channel_radio .post_head:hover {
   background: #e10019;
 }
 
-/* line 236, ../sass/_320.scss */
 .clear_channel_outdoor .post_head_active,
 .clear_channel_outdoor .post_head:active,
 .no-touch .clear_channel_outdoor .post_head:hover {
   background: #026390;
 }
 
-/* line 240, ../sass/_320.scss */
 .ocelo .post_head_active,
 .ocelo .post_head:active,
 .no-touch .ocelo .post_head:hover {
@@ -371,49 +331,52 @@ footer .info li a:active {
 }
 
 @media only screen and (min-width: 768px) {
-  /* line 5, ../sass/_768.scss */
   .content_wrap {
     padding-top: 200px;
   }
 
-  /* line 13, ../sass/_768.scss */
   header {
     height: 200px;
     position: absolute;
     z-index: 1;
   }
 
-  /* line 19, ../sass/_768.scss */
   h1 {
     margin: 80px auto 0 auto;
   }
 
-  /* line 27, ../sass/_768.scss */
   footer {
     position: relative;
     z-index: 1;
   }
 
-  /* line 36, ../sass/_768.scss */
   .post_head {
     height: 100px;
   }
 
+<<<<<<< HEAD
   /* line 40, ../sass/_768.scss */
   .post_head .title_wrap h2 {
+=======
+  .post_head .title_wrap h3 {
+>>>>>>> Last commit before deleting SCSS for Delivery
     color: #bbb;
     font-size: 30px;
     line-height: 100px;
   }
 
+<<<<<<< HEAD
   /* line 47, ../sass/_768.scss */
   .no-touch .post_head:hover .title_wrap h2,
   .post_head_active .title_wrap h2 {
+=======
+  .no-touch .post_head:hover .title_wrap h3,
+  .post_head_active .title_wrap h3 {
+>>>>>>> Last commit before deleting SCSS for Delivery
     color: #fff;
     text-shadow: rgba(0, 0, 0, 0.2) -1px -1px 0;
   }
 
-  /* line 52, ../sass/_768.scss */
   .post_head .title_wrap span {
     bottom: 0;
     display: block;
@@ -421,22 +384,20 @@ footer .info li a:active {
     width: 500px;
   }
 
-  /* line 59, ../sass/_768.scss */
   .img_preview_left .post_head .title_wrap span {
     left: -500px;
   }
 
-  /* line 61, ../sass/_768.scss */
   .img_preview_right .post_head .title_wrap span {
     right: -500px;
   }
 
-  /* line 63, ../sass/_768.scss */
   .post_head .title_wrap span img {
     position: absolute;
     bottom: -100px;
     right: 0;
     z-index: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
     opacity: 0;
     -moz-transition-property: all;
@@ -453,37 +414,32 @@ footer .info li a:active {
     transition-timing-function: ease-in;
   }
 
-  /* line 73, ../sass/_768.scss */
   .img_preview_left .post_head .title_wrap img {
     right: 0;
   }
 
-  /* line 75, ../sass/_768.scss */
   .img_preview_right .post_head .title_wrap img {
     left: 0;
   }
 
-  /* line 80, ../sass/_768.scss */
   .no-touch .img_preview_left .post_head:hover .title_wrap img,
   .img_preview_left .post_head_active .title_wrap img,
   .no-touch .img_preview_right .post_head:hover .title_wrap img,
   .img_preview_right .post_head_active .title_wrap img {
     bottom: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10000)";
     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=10000);
     opacity: 100;
   }
 
-  /* line 90, ../sass/_768.scss */
   .post_content {
     padding-bottom: 30px;
   }
 
-  /* line 94, ../sass/_768.scss */
   .post_content .wrap {
     padding-top: 26px;
   }
 
-  /* line 98, ../sass/_768.scss */
   .post_content .hide_content {
     background: url("../images/build/png_master_sprite.png") -128px 0;
     padding-top: 19px;
@@ -493,31 +449,26 @@ footer .info li a:active {
     width: 19px;
   }
 
-  /* line 108, ../sass/_768.scss */
   .no-touch .post_content .hide_content:hover,
   .post_content .hide_content:active {
     background-position: -128px -19px;
   }
 
-  /* line 112, ../sass/_768.scss */
   .post_content p {
     line-height: 18px;
     margin: 0 0 30px 0;
     padding: 0 80px 30px 0;
   }
 
-  /* line 118, ../sass/_768.scss */
   .post_content .img_list li {
     margin: 30px 0 0 0;
     padding: 30px 0 0 0;
   }
 
-  /* line 127, ../sass/_768.scss */
   footer {
     height: 100px;
   }
 
-  /* line 129, ../sass/_768.scss */
   footer .info {
     font-size: 16px;
     line-height: 20px;
